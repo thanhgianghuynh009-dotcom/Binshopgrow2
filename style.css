@@ -6,6 +6,7 @@ body {background: #121212; color: #fff; line-height: 1.5;}
 .logo {font-size: 22px; font-weight: bold; color: #ffcc00;}
 .navbar a {color: #ffcc00; margin: 0 12px; text-decoration: none; font-weight: 500;}
 .navbar a:hover {color: #fff;}
+.link-login {color: #ff3333; font-weight: bold;}
 
 /* Thanh chào mừng */
 .welcome-bar {background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold; font-size: 14px;}
@@ -21,11 +22,12 @@ body {background: #121212; color: #fff; line-height: 1.5;}
 .nap-the-sidebar {max-width: 400px; margin: -80px 20px 20px auto; position: relative; z-index: 10; background: #222; padding: 20px; border-radius: 10px; border: 2px solid #ff3333;}
 .nap-the-sidebar h3 {color: #ff3333; margin-bottom: 15px; text-align: center;}
 .tab-group {display: flex; gap: 8px; margin-bottom: 12px;}
-.tab-group button {flex:1; padding: 6px; border: none; border-radius: 4px; cursor: pointer;}
+.tab-group button {flex:1; padding: 6px; border: none; border-radius: 4px; cursor: pointer; color:#000;}
 .tab-active {background: #ff3333; color: white; font-weight: bold;}
-.form-input {width: 100%; padding: 10px; margin: 6px 0; border-radius: 4px; border: none; font-size: 14px;}
+.form-input {width: 100%; padding: 10px; margin: 6px 0; border-radius: 4px; border: none; font-size: 14px; background:#333; color:#fff;}
 .btn-napngay {width: 100%; padding: 10px; background: #cc0000; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 8px;}
 .btn-napngay:hover {background: #ff3333;}
+.note-form {margin-top:8px;font-size:13px;color:#ffcccc;text-align:center;}
 
 /* Sản phẩm */
 .products {padding: 40px 20px; max-width: 1200px; margin: 0 auto;}
@@ -50,8 +52,29 @@ footer > div {max-width: 1200px; margin: 0 auto; display: grid; grid-template-co
 .foot-col h4 {color: #ffcc00; margin-bottom: 10px; font-size: 16px;}
 .foot-col p {color: #aaa; font-size: 14px; line-height: 1.6;}
 
+/* Đăng nhập / Đăng ký */
+.auth-page {max-width: 440px; margin: 50px auto; padding: 0 20px;}
+.auth-box {background: #1e1e30; padding: 35px 25px; border-radius: 10px; border: 1px solid #333; text-align: center;}
+.auth-box h2 {color: #ffcc00; margin-bottom: 10px; font-size: 26px;}
+.auth-box p {margin-bottom: 15px; font-size: 14px;}
+.auth-box a {color: #ff3333; text-decoration: none; font-weight: bold;}
+.auth-box a:hover {text-decoration: underline;}
+
+.btn-google {width: 100%; padding: 12px; background: #fff; color: #333; border: none; border-radius: 6px; font-size: 15px; font-weight: bold; cursor: default; margin-bottom: 15px;}
+.divider {display: flex; align-items: center; gap: 10px; color: #888; font-size: 13px; margin: 15px 0;}
+.divider::before, .divider::after {content: ""; flex: 1; height: 1px; background: #444;}
+
+.auth-input {width: 100%; padding: 12px; margin: 8px 0; border-radius: 6px; border: none; font-size: 15px; background: #2b2b40; color: #fff;}
+.auth-input::placeholder {color: #aaa;}
+
+.btn-red {width: 100%; padding: 12px; background: #ff3333; color: #fff; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: default; margin-top: 10px;}
+.btn-red:hover {background: #ff6666;}
+
+.auth-links {margin-top: 15px; display: flex; justify-content: space-between; font-size: 13px;}
+
 /* Điện thoại */
 @media(max-width:768px){
     .banner-overlay h1 {font-size: 28px;}
     .nap-the-sidebar {margin: 20px; max-width: unset;}
+    .navbar {justify-content: center; gap:10px;}
 }
