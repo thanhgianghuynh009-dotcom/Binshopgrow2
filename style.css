@@ -1,0 +1,57 @@
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+body {background: #121212; color: #fff; line-height: 1.5;}
+
+/* Thanh điều hướng */
+.navbar {background: #1a1a2e; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;}
+.logo {font-size: 22px; font-weight: bold; color: #ffcc00;}
+.navbar a {color: #ffcc00; margin: 0 12px; text-decoration: none; font-weight: 500;}
+.navbar a:hover {color: #fff;}
+
+/* Thanh chào mừng */
+.welcome-bar {background: #ffcc00; color: #000; padding: 10px; text-align: center; font-weight: bold; font-size: 14px;}
+
+/* Banner */
+.banner {position: relative; width: 100%; max-height: 450px; overflow: hidden;}
+.banner-img {width: 100%; height: auto; object-fit: cover;}
+.banner-overlay {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; background: rgba(0,0,0,0.5); padding: 20px 40px; border-radius: 10px;}
+.banner-overlay h1 {font-size: 40px; color: #ffcc00; margin-bottom: 8px;}
+.banner-overlay p {font-size: 18px;}
+
+/* Nạp thẻ bên phải */
+.nap-the-sidebar {max-width: 400px; margin: -80px 20px 20px auto; position: relative; z-index: 10; background: #222; padding: 20px; border-radius: 10px; border: 2px solid #ff3333;}
+.nap-the-sidebar h3 {color: #ff3333; margin-bottom: 15px; text-align: center;}
+.tab-group {display: flex; gap: 8px; margin-bottom: 12px;}
+.tab-group button {flex:1; padding: 6px; border: none; border-radius: 4px; cursor: pointer;}
+.tab-active {background: #ff3333; color: white; font-weight: bold;}
+.form-input {width: 100%; padding: 10px; margin: 6px 0; border-radius: 4px; border: none; font-size: 14px;}
+.btn-napngay {width: 100%; padding: 10px; background: #cc0000; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 8px;}
+.btn-napngay:hover {background: #ff3333;}
+
+/* Sản phẩm */
+.products {padding: 40px 20px; max-width: 1200px; margin: 0 auto;}
+.title-bar {display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; flex-wrap: wrap; gap:10px;}
+.title-bar h2 {color: #ffcc00; font-size: 24px;}
+.btn-khampha {padding: 8px 16px; background: #228B22; color: white; border: none; border-radius: 4px; cursor: pointer;}
+.product-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;}
+.card {background: #1e1e30; border-radius: 10px; overflow: hidden; text-align: center; border: 1px solid #444;}
+.card img {width: 100%; height: 160px; object-fit: cover;}
+.card h3 {padding: 12px 10px 8px; font-size: 16px; color: #ffcc00;}
+.card button {margin-bottom: 15px; padding: 8px 18px; background: #ff3333; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;}
+.card button:hover {background: #ff6666;}
+
+/* Chức năng */
+.features {max-width: 1200px; margin: 0 auto 40px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;}
+.feat-item {background: #1a1a2e; padding: 15px; border-radius: 8px; text-align: center; font-size: 24px; display: flex; flex-direction: column; gap: 8px;}
+.feat-item span {font-size: 14px; color: #ddd;}
+
+/* Chân trang */
+footer {background: #000; padding: 30px 20px; border-top: 2px solid #ffcc00;}
+footer > div {max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px;}
+.foot-col h4 {color: #ffcc00; margin-bottom: 10px; font-size: 16px;}
+.foot-col p {color: #aaa; font-size: 14px; line-height: 1.6;}
+
+/* Điện thoại */
+@media(max-width:768px){
+    .banner-overlay h1 {font-size: 28px;}
+    .nap-the-sidebar {margin: 20px; max-width: unset;}
+}
